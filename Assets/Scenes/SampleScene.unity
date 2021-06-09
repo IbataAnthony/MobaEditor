@@ -1415,7 +1415,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 62401090}
-  - component: {fileID: 62401091}
   m_Layer: 0
   m_Name: RespawnPointEnnemy1 (1)
   m_TagString: Untagged
@@ -1437,21 +1436,6 @@ Transform:
   m_Father: {fileID: 934188254}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &62401091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62401089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5ea2a9d78f6354f93114e349fa77c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dead: 0
-  Timer: 0
-  Cooldown: 0
 --- !u!1001 &64836179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4025,7 +4009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 163389468}
-  - component: {fileID: 163389467}
   m_Layer: 0
   m_Name: RespawnPoint1
   m_TagString: Untagged
@@ -4033,21 +4016,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &163389467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163389466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5ea2a9d78f6354f93114e349fa77c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dead: 0
-  Timer: 0
-  Cooldown: 0
 --- !u!4 &163389468
 Transform:
   m_ObjectHideFlags: 0
@@ -11127,6 +11095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492430470}
   - component: {fileID: 492430471}
+  - component: {fileID: 492430472}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -11219,6 +11188,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &492430472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492430469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019bba7954c0abc42b4589444b39ecbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &499077544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25680,7 +25661,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1228079132}
-  - component: {fileID: 1228079133}
   m_Layer: 0
   m_Name: RespawnPointEnnemy1
   m_TagString: Untagged
@@ -25702,21 +25682,6 @@ Transform:
   m_Father: {fileID: 934188254}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1228079133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1228079131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5ea2a9d78f6354f93114e349fa77c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dead: 0
-  Timer: 0
-  Cooldown: 0
 --- !u!1001 &1231228950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32470,7 +32435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dead: 0
   timer: 0
-  cooldown: 3
+  cooldown: 2
   respPoint: {fileID: 1228079131}
   healthBar: {fileID: 0}
   maxHp:
