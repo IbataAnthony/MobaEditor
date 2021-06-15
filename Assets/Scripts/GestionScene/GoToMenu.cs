@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScriptCreationCharac : MonoBehaviour
+public class GoToMenu : MonoBehaviour
 {
     public void GoToSceneGame()
     {
 
-        SceneManager.LoadScene("SceneCreationCharac");
+        SceneManager.LoadScene("SceneMainMenu");
     }
 }
