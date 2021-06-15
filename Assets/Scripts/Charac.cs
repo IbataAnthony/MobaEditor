@@ -11,7 +11,6 @@ public class Charac : MonoBehaviour
     public float cooldown = 2.0f;
     public GameObject respPoint;
     private Rigidbody body;
-    public Slider healthBar;
     public Stat maxHp;
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
     public int HPTot;
@@ -19,6 +18,11 @@ public class Charac : MonoBehaviour
     public Stat damage;
     public Stat armor;
     public Stat attackSpeed;
+
+    void Start()
+    {
+        currentHp = maxHp.GetValue();
+    }
 
     //Update() is called once per frame
     void Update()

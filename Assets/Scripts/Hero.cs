@@ -16,6 +16,7 @@ public class Hero : MonoBehaviour
     {
         targetPosition = transform.position; //acquisition de la position de depart
         isMoving = false;
+
     }
 
     // Update is called once per frame
