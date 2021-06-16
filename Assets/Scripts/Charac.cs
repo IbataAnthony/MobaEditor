@@ -13,8 +13,8 @@ public class Charac : MonoBehaviour
     private Rigidbody body;
     public Stat maxHp;
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
-    public int HPTot;
-    public int currentHp;
+    public float HPTot;
+    public float currentHp;
     public Stat damage;
     public Stat armor;
     public Stat attackSpeed;

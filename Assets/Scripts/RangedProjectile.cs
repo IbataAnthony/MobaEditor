@@ -26,19 +26,19 @@ public class RangedProjectile : MonoBehaviour
         {
             if (target == null)
             {
-                Destroy(GameObject);
+                Destroy(target);
             }
 
-            CryptoAPITransform.position = Vector3.MoveTowards(CryptoAPITransform.position, target.transform.position, velocity * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, velocity * Time.deltaTime);
 
             if (!stopProjectile)
             {
-                if (Vector3.Distance(CryptoAPITransform.position, target.transform.position) < 0.5f)
+                if (Vector3.Distance(transform.position, target.transform.position) < 0.5f)
                 {
                     if (targetType == "Minion")
                     {
                         stopProjectile = true;
-                        Destroy(GameObject);
+                        Destroy(target);
                     }
                 }
             }
