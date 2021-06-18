@@ -18,9 +18,9 @@ public class Health : MonoBehaviour
 
         playerSlider2D = GetComponent<Slider>();
 
-        playerSlider3D.maxValue = statsScript.maxHp.GetValue();
-        playerSlider2D.maxValue = statsScript.maxHp.GetValue();
-        statsScript.currentHp = statsScript.maxHp.GetValue();
+        playerSlider3D.maxValue = statsScript.maxHp;
+        playerSlider2D.maxValue = statsScript.maxHp;
+        statsScript.currentHp = statsScript.maxHp;
     }
 
     // Update is called once per frame
