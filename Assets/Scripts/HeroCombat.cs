@@ -64,7 +64,7 @@ public class HeroCombat : MonoBehaviour
         performMeleeAttack = false;
         //anim.SetBool("Basic Attack", true);
 
-        yield return new WaitForSeconds(statsScript.attackSpeed.GetValue() / ((100.0f + statsScript.attackSpeed.GetValue()) * 0.01f));
+        yield return new WaitForSeconds(statsScript.attackSpeed / ((100.0f + statsScript.attackSpeed) * 0.01f));
 
         if (targetedEnemy == null)
         {
@@ -80,7 +80,7 @@ public class HeroCombat : MonoBehaviour
         {
             if (targetedEnemy.GetComponent<Targetable>().enemyType == Targetable.EnemyType.Minion)
             {
-                targetedEnemy.GetComponent<Charac>().currentHp -= statsScript.damage.GetValue();
+                targetedEnemy.GetComponent<Charac>().currentHp -= statsScript.damage;
             }
         }
 

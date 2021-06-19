@@ -9,17 +9,17 @@ public class ClickOnMe : MonoBehaviour
     public Charac target;
     void Start()
     {
-        
+
     }
-    public void takeDamage(Charac attack , Charac target)
+    public void takeDamage(Charac attack, Charac target)
     {
 
         float mult;
-        if (target.armor.GetValue() > 0) mult = 100 / (100 + target.armor.GetValue());
-        else mult = 2 - 100 / (100 - target.armor.GetValue());
-        target.currentHp -= attack.damage.GetValue() * mult;
+        if (target.getArmor() > 0) mult = 100 / (100 + target.getArmor());
+        else mult = 2 - 100 / (100 - target.getArmor());
+        target.currentHp -= attack.getAttack() * mult;
     }
-    void OnMouseDown ()
+    void OnMouseDown()
     {
         Debug.Log("clic sur " + this.gameObject.name);
         takeDamage(attack, target);

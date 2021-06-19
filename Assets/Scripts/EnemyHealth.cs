@@ -14,8 +14,8 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         statsScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Charac>();
-        enemySlider3D.maxValue = statsScript.maxHp.GetValue();
-        statsScript.currentHp = statsScript.maxHp.GetValue();
+        enemySlider3D.maxValue = statsScript.maxHp;
+        statsScript.currentHp = statsScript.maxHp;
     }
 
     // Update is called once per frame

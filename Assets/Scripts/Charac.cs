@@ -11,17 +11,18 @@ public class Charac : MonoBehaviour
     public float cooldown = 2.0f;
     public GameObject respPoint;
     private Rigidbody body;
-    public Stat maxHp;
+    public float maxHp = 100;
+    public float armor = 5;
+    public float damage = 10;
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
     public float HPTot;
     public float currentHp;
-    public Stat damage;
-    public Stat armor;
-    public Stat attackSpeed;
+    
+    public float attackSpeed;
 
     void Start()
     {
-        currentHp = maxHp.GetValue();
+        currentHp = maxHp;
     }
 
     //Update() is called once per frame
@@ -35,6 +36,34 @@ public class Charac : MonoBehaviour
         }
     }
 
+
+
+
+    public float getArmor()
+    {
+        return armor;
+    }
+    public float getAttack()
+    {
+        return damage;
+    }
+    
+    public void setArmor(string a)
+    {                                 
+        armor = float.Parse(a);
+    }
+
+    public void setMaxHp(string a)
+    {
+        maxHp = float.Parse(a);
+    }
+
+
+    public void setDamage(string a)
+    {                                         
+        damage = float.Parse(a);
+    }
+
     public void suicide()
     {
         this.currentHp -= 20;
@@ -43,8 +72,8 @@ public class Charac : MonoBehaviour
     public void takeDamage(float damage)
     {
         float mult;
-        if (this.armor.GetValue() > 0) mult = 100 / (100 + this.armor.GetValue());
-        else mult = 2 - 100 / (100 - this.armor.GetValue());
+        if (this.getArmor() > 0) mult = 100 / (100 + this.getArmor());
+        else mult = 2 - 100 / (100 - this.getArmor());
         currentHp -= damage * mult;
        
         //rectification de la barre de HP
@@ -59,14 +88,14 @@ public class Charac : MonoBehaviour
         if (dead == true)
         {
 
-            //si l'entité meurt, le timer s'enclenche
+            //si l'entitï¿½Emeurt, le timer s'enclenche
             timer += Time.deltaTime;
         }
 
        
         if (timer >= cooldown)
         {
-            //Si le timer arrive à terme, l'entité respawn
+            //Si le timer arrive ï¿½Eterme, l'entitï¿½Erespawn
             timer = 0;
             respawn();
         }
