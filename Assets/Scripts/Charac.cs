@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Charac : MonoBehaviour
 {
+    UiStat_inGame UiStat_inGame;
+
     public bool dead = false;
     public float timer = 0.0f;
     public float cooldown = 2.0f;
@@ -22,7 +24,9 @@ public class Charac : MonoBehaviour
 
     void Start()
     {
-        currentHp = maxHp;
+        UiStat_inGame = GetComponent<UiStat_inGame>();
+   currentHp = maxHp;
+        DisplayStat();
     }
 
     //Update() is called once per frame
@@ -37,7 +41,11 @@ public class Charac : MonoBehaviour
     }
 
 
+    void DisplayStat() {
+        UiStat_inGame.Attack.text = damage.ToString();
+        UiStat_inGame.Armor.text = armor.ToString();
 
+    }
 
     public float getArmor()
     {
