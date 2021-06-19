@@ -37,12 +37,12 @@ public class Charac : MonoBehaviour
 
     public void suicide()
     {
-        this.currentHp = 0;
+        this.currentHp -= 20;
     }
 
-    public void takeDamage(int damage)
+    public void takeDamage(float damage)
     {
-        int mult;
+        float mult;
         if (this.armor.GetValue() > 0) mult = 100 / (100 + this.armor.GetValue());
         else mult = 2 - 100 / (100 - this.armor.GetValue());
         currentHp -= damage * mult;

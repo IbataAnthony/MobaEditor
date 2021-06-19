@@ -14,7 +14,7 @@ public class ClickOnMe : MonoBehaviour
     public void takeDamage(Charac attack , Charac target)
     {
 
-        int mult;
+        float mult;
         if (target.armor.GetValue() > 0) mult = 100 / (100 + target.armor.GetValue());
         else mult = 2 - 100 / (100 - target.armor.GetValue());
         target.currentHp -= attack.damage.GetValue() * mult;

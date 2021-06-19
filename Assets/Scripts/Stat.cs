@@ -7,11 +7,16 @@ using UnityEngine;
 public class Stat
 {
  [SerializeField]
-    private int baseValue;
+    private float baseValue;
 
-    public int GetValue ()
+    public float GetValue ()
     {
         return baseValue;
+    }
+
+    public void SetValue (float a)
+    {
+        baseValue = a;
     }
    
 }
