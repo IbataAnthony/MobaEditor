@@ -17,7 +17,6 @@ public class Charac : MonoBehaviour
     public float armor = 5;
     public float damage = 10;
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
-    public float HPTot;
     public float currentHp;
     
     public float attackSpeed;
@@ -40,7 +39,7 @@ public class Charac : MonoBehaviour
         }
     }
 
-
+    //Faire en sorte que ça n'affiche pas les stats ennemies ! 
     void DisplayStat() {
         UiStat_inGame.Attack.text = damage.ToString();
         UiStat_inGame.Armor.text = armor.ToString();
@@ -114,7 +113,7 @@ public class Charac : MonoBehaviour
     {
         dead = false;
         this.transform.position = respPoint.transform.position;
-        currentHp = HPTot;
+        currentHp = maxHp;
  
     }
 }
