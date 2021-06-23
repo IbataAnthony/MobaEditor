@@ -43,8 +43,7 @@ public class Charac : MonoBehaviour
     void DisplayStat() {
         UiStat_inGame.Attack.text = damage.ToString();
         UiStat_inGame.Armor.text = armor.ToString();
-
-    }
+        }
 
     public float getArmor()
     {
