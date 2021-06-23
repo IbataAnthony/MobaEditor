@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CompREx1 : CompE
+public class CompREx1 : CompR
 {
     // Start is called before the first frame update
     void Start()
