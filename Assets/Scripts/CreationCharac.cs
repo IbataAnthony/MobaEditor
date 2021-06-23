@@ -8,19 +8,18 @@ public class CreationCharac : MonoBehaviour
     public Charac charac;
     public GestAbilities gestAbilities;
     // Start is called before the first frame update
-    
 
 
-    public void setComps(CompQ compQ, CompW compW , CompE compE, CompR compR )
+
+    public void setComps(CompQ compQ, CompW compW, CompE compE, CompR compR)
     {
         gestAbilities.Comp1 = compQ;
         gestAbilities.Comp2 = compW;
         gestAbilities.Comp3 = compE;
         gestAbilities.Comp4 = compR;
-  
     }
-     
-    public void setCompQ ( CompQ compQ )
+
+    public void setCompQ(CompQ compQ)
     {
         gestAbilities.Comp1 = compQ;
     }
