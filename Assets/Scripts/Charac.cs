@@ -50,14 +50,26 @@ public class Charac : MonoBehaviour
     {
         return armor;
     }
+    public float getAttackSpeed()
+    {
+        return attackSpeed;
+    }
     public float getAttack()
     {
         return damage;
+    }
+    public float getMaxHp()
+    {
+        return maxHp;
     }
     
     public void setArmor(string a)
     {                                 
         armor = float.Parse(a);
+    }
+    public void setAttackSpeed(string a)
+    {
+        attackSpeed = float.Parse(a);
     }
 
     public void setMaxHp(string a)

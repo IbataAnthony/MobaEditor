@@ -4,25 +4,11 @@ using UnityEngine;
 
 public class CreationCharac : MonoBehaviour
 {
-    GameObject capsule;
-    Charac charac;
-    Competences comps;
+    public GameObject capsule;
+    public Charac charac;
+    public Competences comps;
     // Start is called before the first frame update
-    void Start()
-    {
-        // Création de la capsule
-        capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-        capsule.transform.position = new Vector3(0, 0, 0);
-
-        // assignation des composants et scripts
-
-        capsule.AddComponent(typeof(Hero));
-        capsule.AddComponent(typeof(HeroCombat));
-        capsule.AddComponent(typeof(Rigidbody));
-        capsule.AddComponent(typeof(MeshRenderer));
-        comps = capsule.AddComponent(typeof(Competences)) as Competences;
-        charac = capsule.AddComponent(typeof(Charac)) as Charac;
-    }
+    
 
 
     public void setComps(CompQ compQ, CompW compW , CompE compE, CompR compR )
