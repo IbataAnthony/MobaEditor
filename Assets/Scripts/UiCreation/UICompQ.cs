@@ -12,9 +12,9 @@ public class UICompQ : MonoBehaviour
     public GameObject text3;
     int numeroCompQ = 1;
     public CreationCharac creationCharac;
-    CompQ exemple1;
-    CompQ exemple2;
-    CompQ exemple3;
+    public CompQ exemple1;
+    public CompQ exemple2;
+    public CompQ exemple3;
 
     private void Start()
     {

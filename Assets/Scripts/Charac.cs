@@ -68,6 +68,7 @@ public class Charac : MonoBehaviour
     {
         armor = float.Parse(a);
     }
+    
     public void setAttackSpeed(string a)
     {
         attackSpeed = float.Parse(a);
