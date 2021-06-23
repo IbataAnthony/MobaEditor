@@ -5,7 +5,7 @@ using UnityEngine;
 public class CompQEx1 : CompQ
 {
     // Start is called before the first frame update
-    public new void Start() 
+    public new void Start()
     {
         
     }
