@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GestionnaireAbilities : MonoBehaviour
+public class GestAbilities : MonoBehaviour
 {
     public float rotateVelocity;
     public GameObject Capsule;
-    CompQ Comp1 = Capsule.Comps.CompQ;
-    CompW Comp2 = Capsule.Comps.CompW;
-    CompE Comp3 = Capsule.Comps.CompE;
-    CompR Comp4 = Capsule.Comps.CompR;
+    public CompQ Comp1 ;
+    public CompW Comp2 ;
+    public CompE Comp3 ;
+    public CompR Comp4 ;
 
     [Header("Ability 1")]
     public Image abilityImage1;

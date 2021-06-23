@@ -12,9 +12,9 @@ public class UICompW : MonoBehaviour
     public GameObject text3;
     int numeroCompW = 1;
     public CreationCharac creationCharac;
-    CompW exemple1;
-    CompW exemple2;
-    CompW exemple3;
+    public CompW exemple1;
+    public CompW exemple2;
+    public CompW exemple3;
 
     private void Start()
     {

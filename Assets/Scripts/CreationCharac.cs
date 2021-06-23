@@ -6,33 +6,34 @@ public class CreationCharac : MonoBehaviour
 {
     public GameObject capsule;
     public Charac charac;
-    public Competences comps;
+    public GestAbilities gestAbilities;
     // Start is called before the first frame update
     
 
 
     public void setComps(CompQ compQ, CompW compW , CompE compE, CompR compR )
     {
-        comps.compQ = compQ;
-        comps.compW = compW;
-        comps.compE = compE;
-        comps.compR = compR;
+        gestAbilities.Comp1 = compQ;
+        gestAbilities.Comp2 = compW;
+        gestAbilities.Comp3 = compE;
+        gestAbilities.Comp4 = compR;
+  
     }
      
     public void setCompQ ( CompQ compQ )
     {
-        comps.compQ = compQ;
-    }
-    public void setCompE(CompE compE)
-    {
-        comps.compE = compE;
+        gestAbilities.Comp1 = compQ;
     }
     public void setCompW(CompW compW)
     {
-        comps.compW = compW;
+        gestAbilities.Comp2 = compW;
+    }
+    public void setCompE(CompE compE)
+    {
+        gestAbilities.Comp3 = compE;
     }
     public void setCompR(CompR compR)
     {
-        comps.compR = compR;
+        gestAbilities.Comp4 = compR;
     }
 }

@@ -12,9 +12,9 @@ public class UICompE : MonoBehaviour
     public GameObject text3;
     int numeroCompE = 1;
     public CreationCharac creationCharac;
-    CompE exemple1;
-    CompE exemple2;
-    CompE exemple3;
+    public CompE exemple1;
+    public CompE exemple2;
+    public CompE exemple3;
 
     private void Start()
     {

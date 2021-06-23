@@ -12,9 +12,9 @@ public class UICompR : MonoBehaviour
     public GameObject text3;
     int numeroCompR = 1;
     public CreationCharac creationCharac;
-    CompR exemple1;
-    CompR exemple2;
-    CompR exemple3;
+    public CompR exemple1;
+    public CompR exemple2;
+    public CompR exemple3;
 
 
     private void Start()
