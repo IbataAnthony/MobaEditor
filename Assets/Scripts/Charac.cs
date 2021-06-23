@@ -18,13 +18,13 @@ public class Charac : MonoBehaviour
     public float damage = 10;
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
     public float currentHp;
-    
+
     public float attackSpeed;
 
     void Start()
     {
         UiStat_inGame = GetComponent<UiStat_inGame>();
-   currentHp = maxHp;
+        currentHp = maxHp;
         DisplayStat();
     }
 
@@ -40,7 +40,8 @@ public class Charac : MonoBehaviour
     }
 
     //Faire en sorte que ça n'affiche pas les stats ennemies ! 
-    void DisplayStat() {
+    void DisplayStat()
+    {
         UiStat_inGame.Attack.text = damage.ToString();
         UiStat_inGame.Armor.text = armor.ToString();
 
@@ -50,14 +51,26 @@ public class Charac : MonoBehaviour
     {
         return armor;
     }
+    public float getAttackSpeed()
+    {
+        return attackSpeed;
+    }
     public float getAttack()
     {
         return damage;
     }
-    
+    public float getMaxHp()
+    {
+        return maxHp;
+    }
+
     public void setArmor(string a)
-    {                                 
+    {
         armor = float.Parse(a);
+    }
+    public void setAttackSpeed(string a)
+    {
+        attackSpeed = float.Parse(a);
     }
 
     public void setMaxHp(string a)
@@ -67,7 +80,7 @@ public class Charac : MonoBehaviour
 
 
     public void setDamage(string a)
-    {                                         
+    {
         damage = float.Parse(a);
     }
 
@@ -82,11 +95,11 @@ public class Charac : MonoBehaviour
         if (this.getArmor() > 0) mult = 100 / (100 + this.getArmor());
         else mult = 2 - 100 / (100 - this.getArmor());
         currentHp -= damage * mult;
-       
+
         //rectification de la barre de HP
         //float _h = Mathf.Clamp(currentHp, 0.0f, HPTot);
         //healthBar.value = _h;
-        
+
     }
 
     private void death()
@@ -99,7 +112,7 @@ public class Charac : MonoBehaviour
             timer += Time.deltaTime;
         }
 
-       
+
         if (timer >= cooldown)
         {
             //Si le timer arrive �Eterme, l'entit�Erespawn
@@ -114,6 +127,6 @@ public class Charac : MonoBehaviour
         dead = false;
         this.transform.position = respPoint.transform.position;
         currentHp = maxHp;
- 
+
     }
 }

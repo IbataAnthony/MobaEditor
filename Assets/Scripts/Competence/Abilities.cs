@@ -58,9 +58,9 @@ public class Abilities : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*abilityImage1.fillAmount = 0;
+        abilityImage1.fillAmount = 0;
         abilityImage2.fillAmount = 0;
-        abilityImage3.fillAmount = 0;*/
+        abilityImage3.fillAmount = 0;
         abilityImage4.fillAmount = 0;
 
         //skillshot.GetComponent<Image>().enabled = false;
@@ -74,9 +74,9 @@ public class Abilities : MonoBehaviour
     {
 
 
-        /*Ability1();
+        Ability1();
         Ability2();
-        Ability3();*/
+        Ability3();
         Ability4();
 
         RaycastHit hit;
