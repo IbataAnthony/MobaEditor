@@ -43,8 +43,7 @@ public class Charac : MonoBehaviour
     void DisplayStat() {
         UiStat_inGame.Attack.text = damage.ToString();
         UiStat_inGame.Armor.text = armor.ToString();
-
-    }
+        }
 
     public float getArmor()
     {
@@ -67,6 +66,8 @@ public class Charac : MonoBehaviour
     {                                 
         armor = float.Parse(a);
     }
+
+    // Attention danger ! A du mal à gérer les décimaux
     public void setAttackSpeed(string a)
     {
         attackSpeed = float.Parse(a);

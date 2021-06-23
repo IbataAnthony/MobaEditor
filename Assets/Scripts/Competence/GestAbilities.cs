@@ -70,7 +70,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability2()
     {
-        if (Input.GetKey(ability1) && isCooldown == false)
+        if (Input.GetKey(ability2) && isCooldown2 == false)
         {
             Comp2.Launch();
         }
@@ -78,7 +78,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability3()
     {
-        if (Input.GetKey(ability1) && isCooldown == false)
+        if (Input.GetKey(ability3) && isCooldown3 == false)
         {
             Comp3.Launch();
         }
@@ -86,7 +86,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability4()
     {
-        if (Input.GetKey(ability1) && isCooldown == false)
+        if (Input.GetKey(ability4) && isCooldown4 == false)
         {
             Comp4.Launch();
         }
