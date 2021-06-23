@@ -24,7 +24,7 @@ public class Charac : MonoBehaviour
     void Start()
     {
         UiStat_inGame = GetComponent<UiStat_inGame>();
-   currentHp = maxHp;
+        currentHp = maxHp;
         DisplayStat();
     }
 
