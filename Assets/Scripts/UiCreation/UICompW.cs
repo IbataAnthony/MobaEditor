@@ -11,6 +11,10 @@ public class UICompW : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
     int numeroCompW = 1;
+    public CreationCharac creationCharac;
+    CompW exemple1;
+    CompW exemple2;
+    CompW exemple3;
 
     private void Start()
     {
@@ -77,5 +81,17 @@ public class UICompW : MonoBehaviour
     public void previous()
     {
         if (numeroCompW > 1) numeroCompW--;
+    }
+
+    public void apply()
+    {
+        switch (numeroCompW)
+        {
+            case 1: creationCharac.setCompW(exemple1); break;
+            case 2: creationCharac.setCompW(exemple2); break;
+            case 3: creationCharac.setCompW(exemple3); break;
+            default: print("error choix competence W"); break;
+        }
+
     }
 }

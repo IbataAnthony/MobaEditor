@@ -11,6 +11,10 @@ public class UICompQ : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
     int numeroCompQ = 1;
+    public CreationCharac creationCharac;
+    CompQ exemple1;
+    CompQ exemple2;
+    CompQ exemple3;
 
     private void Start()
     {
@@ -77,5 +81,17 @@ public class UICompQ : MonoBehaviour
     public void previous()
     {
         if (numeroCompQ > 1) numeroCompQ--;
+    }
+
+    public void apply()
+    {
+        switch (numeroCompQ)
+        {
+            case 1: creationCharac.setCompQ(exemple1); break;
+            case 2: creationCharac.setCompQ(exemple2); break;
+            case 3: creationCharac.setCompQ(exemple3); break;
+            default: print("error choix competence Q"); break;
+        }
+
     }
 }
