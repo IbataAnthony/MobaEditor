@@ -1382,6 +1382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09f49620880db34096fa0784375635c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charac: {fileID: 802872381}
 --- !u!1 &178952197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,8 +1422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -319, y: -158}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -195, y: -39}
+  m_SizeDelta: {x: 201.681, y: 238.9247}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178952199
 MonoBehaviour:
@@ -6115,16 +6116,16 @@ MonoBehaviour:
   Comp4: {fileID: 1905821589}
   abilityImage1: {fileID: 1936201417}
   cooldown1: 5
-  ability1: 0
+  ability1: 97
   abilityImage2: {fileID: 394734143}
   cooldown2: 10
-  ability2: 0
+  ability2: 122
   abilityImage3: {fileID: 1439991231}
   cooldown3: 7
-  ability3: 0
+  ability3: 101
   abilityImage4: {fileID: 1929829148}
   cooldown4: 10
-  ability4: 0
+  ability4: 114
 --- !u!114 &802872387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13778,7 +13779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -572, y: 105}
+  m_AnchoredPosition: {x: -703, y: 154}
   m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916905457

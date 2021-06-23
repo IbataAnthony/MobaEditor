@@ -50,6 +50,11 @@ public class Charac : MonoBehaviour
     {
         return armor;
     }
+
+    public float getCurrentHp()
+    {
+        return currentHp;
+    }
     public float getAttackSpeed()
     {
         return attackSpeed;
@@ -66,6 +71,10 @@ public class Charac : MonoBehaviour
     public void setArmor(string a)
     {                                 
         armor = float.Parse(a);
+    }
+    public void setCurrentHp(string a)
+    {
+        currentHp = float.Parse(a);
     }
     public void setAttackSpeed(string a)
     {

@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CompEEx1 : CompE
+public class CompEHealth : CompE
 {
+
+    public Charac charac;
     // Start is called before the first frame update
-    void Start()
+    public new void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public new void Update()
     {
         
     }
 
-    void Launch()
+    public new void Launch()
     {
+        charac.setCurrentHp(charac.getMaxHp().ToString());
 
     }
 }
