@@ -11,6 +11,7 @@ public class ClickOnMe : MonoBehaviour
     {
 
     }
+
     public void takeDamage(Charac attack, Charac target)
     {
 
@@ -19,9 +20,14 @@ public class ClickOnMe : MonoBehaviour
         else mult = 2 - 100 / (100 - target.getArmor());
         target.currentHp -= attack.getAttack() * mult;
     }
+
     void OnMouseDown()
     {
         Debug.Log("clic sur " + this.gameObject.name);
-        takeDamage(attack, target);
+        if (attack.remainingAACooldown == 0)
+        {
+            takeDamage(attack, target);
+            attack.remainingAACooldown = 20 / attack.getAttackSpeed();
+        }
     }
 }

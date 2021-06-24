@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,8 +19,9 @@ public class Charac : MonoBehaviour
     public float damage = 10;
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
     public float currentHp;
-    
+    public bool isPlayer;
     public float attackSpeed;
+    public float remainingAACooldown;
 
     void Start()
     {
@@ -31,19 +33,34 @@ public class Charac : MonoBehaviour
     //Update() is called once per frame
     void Update()
     {
+        DisplayStat();
         if (currentHp <= 0)
         {
             //no more health
             this.dead = true;
             death();
         }
+        if (remainingAACooldown > 0)
+        {
+            remainingAACooldown -= 0.1f;
+        }
+            if (remainingAACooldown <= 0)
+            {
+                remainingAACooldown = 0f;
+            }
     }
 
     //Faire en sorte que ça n'affiche pas les stats ennemies ! 
-    void DisplayStat() {
-        UiStat_inGame.Attack.text = damage.ToString();
-        UiStat_inGame.Armor.text = armor.ToString();
+    void DisplayStat()
+    {
+        if (isPlayer)
+        {
+            UiStat_inGame.Attack.text = damage.ToString();
+            UiStat_inGame.Armor.text = armor.ToString();
+            UiStat_inGame.AtkSpd.text = attackSpeed.ToString();
+            UiStat_inGame.HP.text = maxHp.ToString();
         }
+    }
 
     public float getArmor()
     {

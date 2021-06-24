@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UiStat_inGame : MonoBehaviour
 {
-    public Text Attack, Armor;
+    public Text Attack, Armor, HP, AtkSpd;
     // Start is called before the first frame update
    
 }
