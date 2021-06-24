@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class GestAbilities : MonoBehaviour
 {
-    public float rotateVelocity;
     public GameObject Capsule;
     public CompQ Comp1 ;
     public CompW Comp2 ;
@@ -80,7 +79,9 @@ public class GestAbilities : MonoBehaviour
     {
         if (Input.GetKey(ability3) && isCooldown3 == false)
         {
+            Debug.Log("CompEHealth lancée1");
             Comp3.Launch();
+            isCooldown3 = true;
         }
     }
 

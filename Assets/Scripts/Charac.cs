@@ -71,14 +71,17 @@ public class Charac : MonoBehaviour
     {
         return currentHp;
     }
+
     public float getAttackSpeed()
     {
         return attackSpeed;
     }
+
     public float getAttack()
     {
         return damage;
     }
+
     public float getMaxHp()
     {
         return maxHp;
@@ -88,10 +91,12 @@ public class Charac : MonoBehaviour
     {                                 
         armor = float.Parse(a);
     }
+
     public void setCurrentHp(string a)
     {
         currentHp = float.Parse(a);
     }
+
     public void setAttackSpeed(string a)
     {
         attackSpeed = float.Parse(a);
@@ -102,10 +107,27 @@ public class Charac : MonoBehaviour
         maxHp = float.Parse(a);
     }
 
-
     public void setDamage(string a)
     {                                         
         damage = float.Parse(a);
+    }
+
+    public void addDamage(string a)
+    {
+        damage += float.Parse(a); 
+        if (damage < 0)
+        {
+            damage = 0;
+        }
+    }
+
+    public void addAtkSpd(string a)
+    {
+        attackSpeed *= float.Parse(a);
+        if (attackSpeed < 0)
+        {
+            attackSpeed = 0.1f;
+        }
     }
 
     public void suicide()
