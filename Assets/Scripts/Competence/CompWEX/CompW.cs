@@ -31,36 +31,55 @@ public class CompW : MonoBehaviour
 
     public void Launch()
     {
-        if (set == 1)
+        switch (set)
         {
-            Launch1();
-        }
-        else if (set == 2)
-        {
-            Launch2();
-        }
-        else
-        {
-            Launch3();
+            case 1: Launch1(); break;
+            case 2: Launch2(); break;
+            default: Launch3(); break;
+
         }
     }
 
 
     public void Launch1()
     {
-        charac.setCurrentHp(charac.getMaxHp().ToString());
-        Debug.Log("CompEHealth lancée");
+        StartCoroutine(Invu());
+        Debug.Log("CompWInvu lancée");
     }
 
     public void Launch2()
     {
-        charac.setCurrentHp(charac.getMaxHp().ToString());
-        Debug.Log("CompEHealth lancée");
+        StartCoroutine(Armor50());
+        Debug.Log("CompWArmor50 lancée");
     }
 
     public void Launch3()
     {
-        charac.setCurrentHp(charac.getMaxHp().ToString());
-        Debug.Log("CompEHealth lancée");
+        StartCoroutine(Armor25());
+        Debug.Log("CompWArmor25 lancée");
+    }
+
+    IEnumerator Invu()
+    {
+        float tmp = charac.getArmor();
+        charac.setArmor((charac.getArmor() * 100).ToString());
+        yield return new WaitForSeconds(5);
+        charac.setArmor(tmp.ToString());
+    }
+
+    IEnumerator Armor50()
+    {
+        float tmp = charac.getArmor();
+        charac.setArmor((charac.getArmor() + charac.getArmor() * 50 / 100).ToString());
+        yield return new WaitForSeconds(10);
+        charac.setArmor(tmp.ToString());
+    }
+
+    IEnumerator Armor25()
+    {
+        float tmp = charac.getArmor();
+        charac.setArmor((charac.getArmor() + charac.getArmor() * 25 / 100).ToString());
+        yield return new WaitForSeconds(25);
+        charac.setArmor(tmp.ToString());
     }
 }

@@ -31,36 +31,38 @@ public class CompQ : MonoBehaviour
 
     public void Launch()
     {
-        if (set == 1)
+        switch (set)
         {
-            Launch1();
-        }
-        else if (set == 2)
-        {
-            Launch2();
-        }
-        else
-        {
-            Launch3();
+            case 1: Launch1(); break;
+            case 2: Launch2(); break;
+            default: Launch3(); break;
         }
     }
-
+    IEnumerator Invu()
+    {
+        float a = charac.getAttack();
+        charac.setDamage((charac.getAttack() * 1.2).ToString());
+        yield return new WaitForSeconds(5);
+        charac.setDamage(a.ToString());
+    }
 
     public void Launch1()
     {
-        charac.setCurrentHp(charac.getMaxHp().ToString());
-        Debug.Log("CompEHealth lancée");
+        StartCoroutine(Invu());
+        Debug.Log("CompQInvu1 launch");
     }
+
+
 
     public void Launch2()
     {
-        charac.setCurrentHp(charac.getMaxHp().ToString());
-        Debug.Log("CompEHealth lancée");
+        charac.setDamage((charac.getAttack() * 1.2).ToString());
+        Debug.Log("CompQdamage2 lancée");
     }
 
     public void Launch3()
     {
-        charac.setCurrentHp(charac.getMaxHp().ToString());
-        Debug.Log("CompEHealth lancée");
+        charac.setDamage((charac.getAttack() * 1.2).ToString());
+        Debug.Log("CompQdamage3 lancée");
     }
 }
