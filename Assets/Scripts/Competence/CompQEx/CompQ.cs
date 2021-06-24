@@ -33,36 +33,64 @@ public class CompQ : MonoBehaviour
     {
         switch (set)
         {
-            case 1: Launch1(); break;
-            case 2: Launch2(); break;
-            default: Launch3(); break;
+            case 1: BuffDgt(); break;
+            case 2: Beserker(); break;
+            case 3: BuffDgtHp(); break;
+
         }
     }
-    IEnumerator Invu()
+    IEnumerator Invu1()
     {
         float a = charac.getAttack();
         charac.setDamage((charac.getAttack() * 1.2).ToString());
         yield return new WaitForSeconds(5);
         charac.setDamage(a.ToString());
     }
-
-    public void Launch1()
+    IEnumerator Invu2()
     {
-        StartCoroutine(Invu());
+        float a = charac.getAttack();
+        float b = (charac.getCurrentHp()) / charac.getMaxHp();
+        float x = 1;
+        if (b != 1)
+        {
+            charac.setDamage((charac.getAttack() * (x + (x - b))).ToString());
+
+        }
+        else { }
+        if (charac.getCurrentHp() <= 0) { yield return new WaitForSeconds(0); }
+        yield return new WaitForSeconds(5);
+        charac.setDamage(a.ToString());
+    }
+
+
+    IEnumerator Invu3()
+    {
+        float a = charac.getAttack();
+        charac.setDamage((charac.getAttack() + (charac.getCurrentHp() * 0.05)).ToString());
+        yield return new WaitForSeconds(5);
+        charac.setDamage(a.ToString());
+    }
+
+
+    public void BuffDgt()
+    {
+        StartCoroutine(Invu1());
         Debug.Log("CompQInvu1 launch");
     }
 
 
 
-    public void Launch2()
+    public void Beserker()
     {
-        charac.setDamage((charac.getAttack() * 1.2).ToString());
-        Debug.Log("CompQdamage2 lancée");
+        StartCoroutine(Invu2());
+        Debug.Log("CompQdamage2 launch");
     }
 
-    public void Launch3()
+    public void BuffDgtHp()
     {
-        charac.setDamage((charac.getAttack() * 1.2).ToString());
-        Debug.Log("CompQdamage3 lancée");
+
+        StartCoroutine(Invu3());
+        Debug.Log("CompQdamage3 launch");
+
     }
 }

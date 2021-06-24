@@ -19,6 +19,7 @@ public class GestAbilities : MonoBehaviour
     public float cooldown1 = 5;
     bool isCooldown1 = false;
     public KeyCode ability1;
+    public bool castable1 = true;
 
     [Header("Ability 2")]
     public Image Comp2Clair;
@@ -26,6 +27,7 @@ public class GestAbilities : MonoBehaviour
     public float cooldown2 = 10;
     bool isCooldown2 = false;
     public KeyCode ability2;
+    public bool castable2 = true;
 
     [Header("Ability 3")]
     public Image Comp3Clair;
@@ -33,6 +35,7 @@ public class GestAbilities : MonoBehaviour
     public float cooldown3 = 7;
     bool isCooldown3 = false;
     public KeyCode ability3;
+    public bool castable3 = true;
 
     [Header("Ability 4")]
     public Image Comp4Clair;
@@ -40,6 +43,7 @@ public class GestAbilities : MonoBehaviour
     public float cooldown4 = 10;
     bool isCooldown4 = false;
     public KeyCode ability4;
+    public bool castable4 = true;
 
     // Start is called before the first frame update
     void Start()
@@ -132,7 +136,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability1()
     {
-        if (Input.GetKey(ability1) && isCooldown1 == false)
+        if (Input.GetKey(ability1) && isCooldown1 == false && castable1)
         {
             Comp1.Launch();
             Debug.Log("Comp1 lancée");
@@ -156,7 +160,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability2()
     {
-        if (Input.GetKey(ability2) && isCooldown2 == false)
+        if (Input.GetKey(ability2) && isCooldown2 == false && castable2)
         {
             Comp2.Launch();
             Debug.Log("Comp2 lancée");
@@ -181,7 +185,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability3()
     {
-        if (Input.GetKey(ability3) && isCooldown3 == false)
+        if (Input.GetKey(ability3) && isCooldown3 == false && castable3)
         {
             Comp3.Launch();
             Debug.Log("Comp3 lancée");
@@ -205,7 +209,7 @@ public class GestAbilities : MonoBehaviour
 
     void Ability4()
     {
-        if (Input.GetKey(ability4) && isCooldown4 == false)
+        if (Input.GetKey(ability4) && isCooldown4 == false && castable4)
         {
             Comp4.Launch();
             Debug.Log("Comp4 lancée");
