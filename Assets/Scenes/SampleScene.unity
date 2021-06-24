@@ -17473,17 +17473,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 734380020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88d8261e728ce3b4d9a1a65b27e37ec8, type: 3}
+  m_Script: {fileID: 11500000, guid: 825387ece9e00d3458b89ac458032b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageBase1: {fileID: 0}
-  imageSombre1: {fileID: 0}
-  imageBase2: {fileID: 0}
-  imageSombre2: {fileID: 0}
-  imageBase3: {fileID: 0}
-  imageSombre3: {fileID: 0}
+  imageBase1: {fileID: 998099693}
+  imageSombre1: {fileID: 1060139900}
+  imageBase2: {fileID: 1437904261}
+  imageSombre2: {fileID: 1639468527}
+  imageBase3: {fileID: 41604155}
+  imageSombre3: {fileID: 2029227941}
   charac: {fileID: 1541484360}
-  set: 1
+  set: 0
 --- !u!1001 &735562198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20704,15 +20704,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 911696381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88d8261e728ce3b4d9a1a65b27e37ec8, type: 3}
+  m_Script: {fileID: 11500000, guid: 30471840ac8a74a4c998c96390aeeb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageBase1: {fileID: 0}
-  imageSombre1: {fileID: 0}
-  imageBase2: {fileID: 0}
-  imageSombre2: {fileID: 0}
-  imageBase3: {fileID: 0}
-  imageSombre3: {fileID: 0}
+  imageBase1: {fileID: 1026630366}
+  imageSombre1: {fileID: 1891401875}
+  imageBase2: {fileID: 1373386631}
+  imageSombre2: {fileID: 171341361}
+  imageBase3: {fileID: 1196292803}
+  imageSombre3: {fileID: 1137384194}
   charac: {fileID: 1541484360}
   set: 1
 --- !u!1001 &912832293
@@ -30292,7 +30292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1389866711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33960,10 +33960,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Capsule: {fileID: 1541484352}
-  Comp1: {fileID: 0}
-  Comp2: {fileID: 0}
+  Comp1: {fileID: 1745374438}
+  Comp2: {fileID: 911696383}
   Comp3: {fileID: 1572728463}
-  Comp4: {fileID: 0}
+  Comp4: {fileID: 734380022}
   abilityImage1: {fileID: 20921121}
   cooldown1: 5
   ability1: 97
@@ -39031,15 +39031,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745374436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88d8261e728ce3b4d9a1a65b27e37ec8, type: 3}
+  m_Script: {fileID: 11500000, guid: 27730c58489dd9a449f492c83c0c4f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageBase1: {fileID: 0}
-  imageSombre1: {fileID: 0}
-  imageBase2: {fileID: 0}
-  imageSombre2: {fileID: 0}
-  imageBase3: {fileID: 0}
-  imageSombre3: {fileID: 0}
+  imageBase1: {fileID: 1711696958}
+  imageSombre1: {fileID: 1885880934}
+  imageBase2: {fileID: 457418117}
+  imageSombre2: {fileID: 311213822}
+  imageBase3: {fileID: 1389866712}
+  imageSombre3: {fileID: 634172093}
   charac: {fileID: 1541484360}
   set: 1
 --- !u!1001 &1750648684

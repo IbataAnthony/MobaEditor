@@ -31,20 +31,13 @@ public class CompE : MonoBehaviour
 
     public void Launch()
     {
-        if (set == 1)
+        switch (set)
         {
-            Launch1();
-        }
-        else if (set == 2)
-        {
-            Launch2();
-        }
-        else
-        {
-            Launch3();
+            case 1: Launch1(); break;
+            case 2: Launch2(); break;
+            default: Launch3(); break;
         }
     }
-   
 
     public void Launch1()
     {
