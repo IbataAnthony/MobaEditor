@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraFollow">
+    <Position X="11.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAABAAAAAAAAAAAAAACBAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraScroll">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACAAAAAAAAAAAAgAAAAAAAAAAAAIAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraScroll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="changeCharac">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="changeCharac.CharacAModifier" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\changeCharac.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAEACAgCAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\changeCharac.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="characScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Charac">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kIQiAACAACAAgASAAIAAABiAESAEARSJEAAAIBAoAAA=</HashCode>
+      <FileName>Assets\Scripts\Charac.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="body" />
+      <Field Name="UiStat_inGame" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CreationCharac">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAgAAIAAAAACAEAAAAAEACAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CreationCharac.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="charac" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Health">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAADCAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Health.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="statsScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthDisplay">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\HealthDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthBar">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAgAAAACAAAgAAAAAAAAAAgQQgAA=</HashCode>
+      <FileName>Assets\Scripts\HealthBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyHealth">
+    <Position X="6" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyHealth.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="statsScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hero">
+    <Position X="1.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEQAAACAAoAAAAAAAgAAAAAAAAQAAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Hero.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="RigidBodyComponent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnityEngine.Rigidbody" Collapsed="true">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HeroCombat">
+    <Position X="8" Y="4" Width="2" />
+    <NestedTypes>
+      <Enum Name="HeroCombat.HeroAttackType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\HeroCombat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAQAAAQAACAAAAAABAAAAAYAAAgAAAAIAAAAAAQAAAg=</HashCode>
+      <FileName>Assets\Scripts\HeroCombat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="statsScript" />
+      <Field Name="moveScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HeroUI">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\HeroUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputTargeting">
+    <Position X="16" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAgAAAAAAEAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\InputTargeting.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="hit" />
+      <Field Name="selectedHero" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Movement">
+    <Position X="8.25" Y="11.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAACAAAAEAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Movement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="heroCombatScript" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerHealthSlider">
+    <Position X="13" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerHealthSlider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RangedProjectile">
+    <Position X="11" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAKIAgAAAIAAAAAABAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RangedProjectile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="target" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnityEngine.GameObject" Collapsed="true">
+    <Position X="15" Y="9.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Targetable">
+    <Position X="14.5" Y="11.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Targetable.EnemyType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Targetable.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Targetable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompE">
+    <Position X="3.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIADQCAAgAAAAAQAAADAAgAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Competence\CompEEx\CompE.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="charac" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CompQ">
+    <Position X="6.75" Y="11" Width="1.5" />
+    <AssociationLine Name="charac" Type="Charac" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="11" />
+        <Point X="7.5" Y="8.127" />
+        <Point X="5.5" Y="8.127" />
+        <Point X="5.5" Y="7.937" />
+        <Point X="4.998" Y="7.937" />
+        <Point X="4.998" Y="7.558" />
+        <Point X="4.75" Y="7.558" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAQCAAgAAIAIQAAADAAgAAAAEAAAAAAIAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Competence\CompQEx\CompQ.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="charac" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CompR">
+    <Position X="5.25" Y="11" Width="1.5" />
+    <AssociationLine Name="charac" Type="Charac" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="11" />
+        <Point X="5.375" Y="9.989" />
+        <Point X="5.101" Y="9.989" />
+        <Point X="5.101" Y="8.364" />
+        <Point X="4.688" Y="8.364" />
+        <Point X="4.688" Y="7.569" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.183" Y="0.829" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAQIADQCAAgAAAAAQAAADAEgAAgAEBQAAAIAAAACg=</HashCode>
+      <FileName>Assets\Scripts\Competence\CompREx\CompR.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="charac" />
+      <Field Name="gestAbilities" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CompW">
+    <Position X="2.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASQAIADQCAAgAAAAAQAAADAAgAAAAEAAAABAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Competence\CompWEX\CompW.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="charac" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestAbilities">
+    <Position X="3.25" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAYAAgACgAMEAAIQAIIAQAECoEMAAACBAAAAFEAEA=</HashCode>
+      <FileName>Assets\Scripts\Competence\GestAbilities.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Capsule" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UiStat_inGame">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQIAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UiCreation\UiStat_inGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIAttack">
+    <Position X="17" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAIAAABAAxQAAAAAAABAAAIAAIA=</HashCode>
+      <FileName>Assets\Scripts\UiCreation\UIAttack.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="attack1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UICompE">
+    <Position X="21.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAACAAAAAIABIAQAAAABQAABAAAAAAgAoAAIA=</HashCode>
+      <FileName>Assets\Scripts\UiCreation\UICompE.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UICompQ">
+    <Position X="18.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAACAAAAAAABKAQAAAABQAABAAAAAAIAoAAIA=</HashCode>
+      <FileName>Assets\Scripts\UiCreation\UICompQ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UICompR">
+    <Position X="16.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAACAAAAQAABIAQAAAABQAABABAAAAAAoAAIA=</HashCode>
+      <FileName>Assets\Scripts\UiCreation\UICompR.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="text1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UICompW">
+    <Position X="19.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAACAAAAACABIAQAAAABQAABCAAAAAAAoAAIA=</HashCode>
+      <FileName>Assets\Scripts\UiCreation\UICompW.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="UnityEngine.RaycastHit" Collapsed="true">
+    <Position X="15.25" Y="6" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
