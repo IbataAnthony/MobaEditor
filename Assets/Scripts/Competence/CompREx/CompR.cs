@@ -16,7 +16,7 @@ public class CompR : MonoBehaviour
     public float set;
     private GestAbilities gestAbilities;
     private bool stasis;
-    public float stasisDuration = 700;
+    public float stasisDuration = 2000;
     public Material stasisMat;
     public Material baseMat;
     public GameObject player;
@@ -74,7 +74,7 @@ public class CompR : MonoBehaviour
         if (stasisDuration <= 0.0)
         {
             stasis = false;
-            stasisDuration = 700;
+            stasisDuration = 2000;
             player.GetComponent<MeshRenderer>().material = baseMat;
             player.GetComponent<Hero>().speed = tmpSpd;
             tmpSpd = 0;

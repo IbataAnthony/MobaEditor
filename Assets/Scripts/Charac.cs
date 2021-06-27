@@ -20,7 +20,7 @@ public class Charac : MonoBehaviour
     //HPTot et currentHP sont des entiers bruts qu'il faudra remplacer par leurs stats correspondantes
     public float currentHp;
     public bool isPlayer;
-    public float attackSpeed;
+    public float attackSpeed = 2;
     public float remainingAACooldown;
 
     void Start()

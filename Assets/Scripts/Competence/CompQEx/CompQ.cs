@@ -22,7 +22,7 @@ public class CompQ : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    // Update is called once pe r frame
     public void Update()
     {
 
