@@ -1,4 +1,4 @@
-#Il se peut que selon les version certaine fonctionnalité comme les competence une fois les stat changé ne marche plus (malgré quel marche au moment de la réalisation de la video screencast)
+#Il se peut que selon les version certaine fonctionnalité comme les competence une fois les stat changé ne marche plus sous unity mais marche dans l application final (executable MobaEditor)
 
 Ibata Anthony:
 J'ai participé au mouvement de la capsule ,compétence augmentant l'attaque, changement de stat (version finale de Mael gardé), correction de bug, harmonisation du Hud, finalisation du projet.

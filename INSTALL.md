@@ -3,7 +3,7 @@ visual studio 2019 qui permettra d'ouvrir les script du projet
 quand vous avez ces appli vous ouvrez unity hub vous cliquez sur add dans l'onglet project
 et vous renseignez le chemin du projet. Avant de rentrer dans le play mode il faut load la scene (sample scene) qui est dans le dossier scene
 
-pour lancer l'executable de l'application il y a un fichier zip MobaEditorFinalVersion a ouvrir (racine du projet)
+pour lancer l'executable de l'application il y a un fichier zip MobaEditorApp a ouvrir (racine du projet)
 une fois ouvert il faudra lancer Moba Editor qui est a la racine du fichier.
 
 Deplacement avec le clic droit, attaque sur les enemies avec clic gauche
