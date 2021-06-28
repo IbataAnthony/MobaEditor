@@ -27,7 +27,7 @@ public class HealthBar : MonoBehaviour
         healthBar.value = currentHP;
     }
 
-    // Appelée lors d'un soin ou de dégâts. Change la valeur des HPs actuels, à modifier après la création des stats HP et HPMax
+    // Appelée lors d'un soin ou de dégâts. Change la valeur des HPs actuels, Emodifier après la création des stats HP et HPMax
     public void changeHP(int dHP)
     {
         currentHP += dHP;

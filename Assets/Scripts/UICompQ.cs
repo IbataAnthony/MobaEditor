@@ -10,14 +10,19 @@ public class UICompQ : MonoBehaviour
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
+    CompQ compq;
     int numeroCompQ = 1;
     public CreationCharac creationCharac;
-    public CompQ exemple1;
-    public CompQ exemple2;
-    public CompQ exemple3;
+
+    GameObject[] player;
 
     private void Start()
     {
+
+        player = GameObject.FindGameObjectsWithTag("Player");
+        creationCharac = player[0].GetComponent(typeof(CreationCharac)) as CreationCharac;
+        compq = player[0].GetComponent(typeof(CompQ)) as CompQ;
+
         compQ1.gameObject.SetActive(true);
         text1.gameObject.SetActive(true);
 
@@ -85,13 +90,7 @@ public class UICompQ : MonoBehaviour
 
     public void apply()
     {
-        switch (numeroCompQ)
-        {
-            case 1: creationCharac.setCompQ(exemple1); break;
-            case 2: creationCharac.setCompQ(exemple2); break;
-            case 3: creationCharac.setCompQ(exemple3); break;
-            default: print("error choix competence Q"); break;
-        }
+        compq.set = numeroCompQ;
 
     }
 }
