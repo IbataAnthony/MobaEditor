@@ -16,7 +16,7 @@ public class GoToMenu : MonoBehaviour
         cam1.enabled = true;
         cam2.enabled = false;
     }
- 
+
     /*function Update()
     {
 

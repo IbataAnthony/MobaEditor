@@ -37,13 +37,13 @@ public class ScriptCreationCharac : MonoBehaviour
     public void GoToSceneGame()
     {
 
-       
+
         player.transform.position = resp.transform.position;
         cam1.enabled = !cam1.enabled;
         cam2.enabled = !cam2.enabled;
-        hud.enabled = !hud.enabled;
+        hud.enabled = true;
         menuHud.enabled = false;
-        creaHud.enabled = !creaHud.enabled;
+        creaHud.enabled = true;
         //SceneManager.LoadScene("SceneMainMenu");
     }
 }

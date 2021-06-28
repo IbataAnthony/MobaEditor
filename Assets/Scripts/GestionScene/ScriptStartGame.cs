@@ -44,7 +44,7 @@ public class ScriptStartGame : MonoBehaviour
         cam1.enabled = true;
         cam2.enabled = false;
 
-      
+
         hud.enabled = true;
         creaHud.enabled = false;
         menuHud.enabled = false;

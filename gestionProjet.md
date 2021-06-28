@@ -1,3 +1,5 @@
+#Il se peut que selon les version certaine fonctionnalité comme les competence une fois les stat changé ne marche plus (malgré quel marche au moment de la réalisation de la video screencast)
+
 Ibata Anthony:
 J'ai participé au mouvement de la capsule ,compétence augmentant l'attaque, changement de stat (version finale de Mael gardé), correction de bug, harmonisation du Hud, finalisation du projet.
 J'ai pu apprendre grâce a tous ça a mieux maîtriser unity en général la façon de lier les scripts au objets 3d les interactions entre objets les raycast la gestion des menus et des boutons, je connais maintenant les bases du langage C#, les références entre script (appel de méthode) la manipulation de données simples.
