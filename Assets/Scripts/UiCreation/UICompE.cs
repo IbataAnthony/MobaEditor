@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class UICompE : MonoBehaviour
 {
-    GameObject[] player;
     public GameObject compE1;
     public GameObject compE2;
     public GameObject compE3;
@@ -12,7 +11,6 @@ public class UICompE : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
     int numeroCompE = 1;
-    CompE compe;
     public CreationCharac creationCharac;
     public CompE exemple1;
     public CompE exemple2;
@@ -20,12 +18,6 @@ public class UICompE : MonoBehaviour
 
     private void Start()
     {
-
-        player = GameObject.FindGameObjectsWithTag("Player");
-        creationCharac = player[0].GetComponent(typeof(CreationCharac)) as CreationCharac;
-        compe = player[0].GetComponent(typeof(CompE)) as CompE;
-
-
         compE1.gameObject.SetActive(true);
         text1.gameObject.SetActive(true);
 
@@ -92,7 +84,13 @@ public class UICompE : MonoBehaviour
     }
     public void apply()
     {
-        compe.set = numeroCompE;
+        switch (numeroCompE)
+        {
+            case 1: creationCharac.setCompE(exemple1); break;
+            case 2: creationCharac.setCompE(exemple2); break;
+            case 3: creationCharac.setCompE(exemple3); break;
+            default: print("error choix competence E"); break;
+        }
 
     }
 }

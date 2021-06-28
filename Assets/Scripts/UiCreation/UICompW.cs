@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class UICompW : MonoBehaviour
 {
-
-    GameObject[] player;
-
     public GameObject compW1;
     public GameObject compW2;
     public GameObject compW3;
@@ -14,7 +11,6 @@ public class UICompW : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
     int numeroCompW = 1;
-    CompW compw;
     public CreationCharac creationCharac;
     public CompW exemple1;
     public CompW exemple2;
@@ -22,11 +18,6 @@ public class UICompW : MonoBehaviour
 
     private void Start()
     {
-
-        player = GameObject.FindGameObjectsWithTag("Player");
-        creationCharac = player[0].GetComponent(typeof(CreationCharac)) as CreationCharac;
-        compw = player[0].GetComponent(typeof(CompW)) as CompW;
-
         compW1.gameObject.SetActive(true);
         text1.gameObject.SetActive(true);
 
@@ -94,7 +85,13 @@ public class UICompW : MonoBehaviour
 
     public void apply()
     {
-        compw.set = numeroCompW;
+        switch (numeroCompW)
+        {
+            case 1: creationCharac.setCompW(exemple1); break;
+            case 2: creationCharac.setCompW(exemple2); break;
+            case 3: creationCharac.setCompW(exemple3); break;
+            default: print("error choix competence W"); break;
+        }
 
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealthSlider : MonoBehaviour
 {
-  
+    public Camera cam;
 
 
     // Update is called once per frame

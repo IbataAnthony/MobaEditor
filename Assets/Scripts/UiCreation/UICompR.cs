@@ -10,22 +10,15 @@ public class UICompR : MonoBehaviour
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
-    CompR compr;
     int numeroCompR = 1;
     public CreationCharac creationCharac;
     public CompR exemple1;
     public CompR exemple2;
     public CompR exemple3;
-    GameObject[] player;
 
 
     private void Start()
     {
-
-        player = GameObject.FindGameObjectsWithTag("Player");
-        creationCharac = player[0].GetComponent(typeof(CreationCharac)) as CreationCharac;
-        compr = player[0].GetComponent(typeof(CompR)) as CompR;
-
         compR1.gameObject.SetActive(true);
         text1.gameObject.SetActive(true);
 
@@ -92,7 +85,13 @@ public class UICompR : MonoBehaviour
     }
     public void apply()
     {
-        compr.set = numeroCompR;
+        switch (numeroCompR)
+        {
+            case 1: creationCharac.setCompR(exemple1); break;
+            case 2: creationCharac.setCompR(exemple2); break;
+            case 3: creationCharac.setCompR(exemple3); break;
+            default: print("error choix competence R"); break;
+        }
 
     }
 }
